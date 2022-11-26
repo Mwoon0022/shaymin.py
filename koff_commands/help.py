@@ -4,8 +4,8 @@ import random
 default_colour = discord.Color.from_rgb(47,49,54)
 
 def get(author):
-    thumbnail_pokemon = [ "shaymin","hawlucha","charizard-megax","charizard-megay","lanturn","houndoom","moltres","natu","groudon-primal","kyogre-primal","pikachu-popstar"]
-    thumbnail = thumbnail_pokemon[random.randint(0,11)]
+    thumbnail_pokemon = [ "shaymin","hawlucha","charizard-megax","charizard-megay","lanturn","houndoom","moltres","salamence-mega","regidrago","mawile-mega","groudon-primal","kyogre-primal","xerneas","zygarde","yveltal","beedrill-mega","blaziken-mega","ferrothorn","chansey","regirock","regieleki"]
+    thumbnail = thumbnail_pokemon[random.randint(0,len(thumbnail_pokemon)]
 
     embed = discord.Embed(description = f""" ឵឵  ឵឵  ឵឵  
 ` ~sets <gen> <pokeSpecies> `
