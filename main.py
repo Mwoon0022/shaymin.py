@@ -226,5 +226,5 @@ async def on_message(msg):
 
 
 
-
-client.run("ODYzNzMzNTkxODIxMzg1NzQ4.GshAz4.umtxECvHVBD__SMv0Vq7TMVF81hmDSgPyYFBH4")
+secret = os.environ['token']
+client.run(secret)
