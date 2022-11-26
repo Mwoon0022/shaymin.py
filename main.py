@@ -65,6 +65,7 @@ async def on_message(msg):
 
         if ctx.startswith('help'):
           await channel.send(embed=help.get(msg.author))      
+          print('a')
 
 
           
