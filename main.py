@@ -38,15 +38,8 @@ async def change_status():
 botPrefix = '~'
 
 
-
-
-
 #‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵
-
 #‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵
-
-
-
 
 
 @client.event
@@ -56,8 +49,6 @@ async def on_message(msg):
         ctx = msg.content.lower()[len(botPrefix):].strip()
         channel = msg.channel                                   
 
-
-      
       
 
       #‿︵‿︵‿︵‿︵‿︵ HELP ‿︵‿︵‿︵‿︵‿︵
@@ -67,12 +58,8 @@ async def on_message(msg):
           await channel.send(embed=help.get(msg.author))      
           print('a')
 
-
-          
-
           
        #‿︵‿︵‿︵‿︵‿︵ USER ‿︵‿︵‿︵‿︵‿︵
-
       
 
         elif ctx.startswith('user '):
@@ -105,12 +92,7 @@ async def on_message(msg):
           await channel.send(embed = user.embed(username, output, msg.author) , view = view)              
 
 
-
-          
-
        #‿︵‿︵‿︵‿︵‿︵ SETS ‿︵‿︵‿︵‿︵‿︵
-
-      
 
         elif ctx.startswith('sets '):
           
@@ -158,14 +140,9 @@ async def on_message(msg):
           
           view = DropdownView()
           await channel.send(embed = sets.get(sets_data, data, msg.author) , view = view)  
-
-
-          
-
+            
           
        #‿︵‿︵‿︵‿︵‿︵ STATISTICS ‿︵‿︵‿︵‿︵‿︵
-
-      
       
         elif ctx.startswith('stats '):
        
@@ -218,13 +195,9 @@ async def on_message(msg):
           view2 = StatisticsView()
           await channel.send(embed = embed, view = view2)
 
-          
-
-          
+        
 #‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵
-
 #‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵‿︵
-
 
 
 secret = os.environ['token']
