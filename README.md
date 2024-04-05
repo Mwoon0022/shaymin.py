@@ -5,5 +5,5 @@ Shaymin is a discord bot capable of scraping Smogon and related websites to get 
 <img width="275" alt="image" src="https://github.com/Mwoon0022/shaymin.py/assets/90773096/050b51b1-54d5-42fd-b16c-41724b578ca6">
 
 Websites used for scraping:
-  https://pkmn.github.io/smogon/data/
-  https://www.smogon.com/
+- https://pkmn.github.io/smogon/data/
+- https://www.smogon.com/
